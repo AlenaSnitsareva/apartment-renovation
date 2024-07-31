@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oskar ремонт квартир</title>
+    <link rel="icon" type="image/png" href="/img/logo.png" />
+    <link
+      rel="preload"
+      href="../fonts/Montserrat-SemiBold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../fonts/Montserrat-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../fonts/Montserrat-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link
+      rel="preload"
+      fetchpriority="high"
+      as="image"
+      href="./img/hero-bg.webp"
+    />
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <script defer src="./js/bootstrap.bundle.min.js"></script>
+    
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/slider-style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+
+    <script defer src="./js/slider.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="section-container header__container">
+        <a class="header__logo-link" href="#">
+          <img src="./img/logo.png" alt="Ремонт и дизайн квартир в Москве" />
+          <span class="logo-link_descr">Ремонт и дизайн квартир в Москве</span>
+        </a>
+
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="nav-item">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Ремонт и отделка
+                   </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="categories-list">
+                  <li class="categories-item">
+                    <a class="categories-link" href="#">Категории</a>
+                  </li>
+                  <li class="categories-item">
+                    <a class="categories-link" href="#">Категории</a>
+                  </li>
+                  <li class="categories-item">
+                    <a class="categories-link" href="#">Категории</a>
+                  </li>
+                </ul>
+                    </div>
+                  </div>
+              </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Дизайн 
+                   
+                   </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="categories-list">
+                  <li class="categories-item">
+                    <a class="categories-link" href="#">Категории</a>
+                  </li>
+                  <li class="categories-item">
+                    <a class="categories-link" href="#">Категории</a>
+                  </li>
+                  <li class="categories-item">
+                    <a class="categories-link" href="#">Категории</a>
+                  </li>
+                </ul>
+                    </div>
+                  </div>
+              </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Портфолио </a>
+            </li>
+            <li class="nav-item">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Цены 
+                   </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="categories-list">
+                  <li class="categories-item">
+                    <a class="categories-link" href="#">Категории</a>
+                  </li>
+                  <li class="categories-item">
+                    <a class="categories-link" href="#">Категории</a>
+                  </li>
+                  <li class="categories-item">
+                    <a class="categories-link" href="#">Категории</a>
+                  </li>
+                </ul>
+                    </div>
+                  </div>
+              </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                      О компании 
+                   </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="categories-list">
+                  <li class="categories-item">
+                    <a class="categories-link" href="#">Категории</a>
+                  </li>
+                  <li class="categories-item">
+                    <a class="categories-link" href="#">Категории</a>
+                  </li>
+                  <li class="categories-item">
+                    <a class="categories-link" href="#">Категории</a>
+                  </li>
+                </ul>
+                    </div>
+                  </div>
+              </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header__social-list">
+          <li class="social-item">
+            <a href="https://wa.me/+79509185894">
+              <svg
+                width="22"
+                height="23"
+                viewBox="0 0 22 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_23176_1967)">
+                  <path
+                    d="M1.83669 20.6667L3.07602 16.1127C2.2594 14.7128 1.83036 13.1207 1.83302 11.5C1.83302 6.43725 5.93694 2.33334 10.9997 2.33334C16.0624 2.33334 20.1664 6.43725 20.1664 11.5C20.1664 16.5628 16.0624 20.6667 10.9997 20.6667C9.37973 20.6693 7.78829 20.2406 6.38885 19.4246L1.83669 20.6667ZM7.69144 7.199C7.57306 7.20635 7.45739 7.23753 7.35135 7.29067C7.25191 7.34698 7.16114 7.41738 7.08185 7.49967C6.97185 7.60325 6.90952 7.69309 6.8426 7.78017C6.50381 8.22108 6.32158 8.7623 6.32469 9.31834C6.32652 9.7675 6.44385 10.2048 6.62719 10.6136C7.0021 11.4404 7.61902 12.3158 8.43394 13.1271C8.6301 13.3223 8.82169 13.5185 9.02794 13.7009C10.0394 14.5914 11.2447 15.2336 12.5479 15.5764L13.0695 15.6562C13.2391 15.6653 13.4087 15.6525 13.5792 15.6443C13.8462 15.6305 14.1068 15.5582 14.3428 15.4325C14.4949 15.3518 14.5664 15.3115 14.6939 15.2308C14.6939 15.2308 14.7333 15.2052 14.8084 15.1483C14.9322 15.0567 15.0083 14.9916 15.1109 14.8843C15.187 14.8055 15.253 14.7129 15.3034 14.6075C15.3749 14.4581 15.4464 14.173 15.4758 13.9356C15.4978 13.7541 15.4914 13.6551 15.4886 13.5937C15.4849 13.4956 15.4034 13.3938 15.3144 13.3508L14.7809 13.1115C14.7809 13.1115 13.9834 12.7641 13.4967 12.5423C13.4454 12.5199 13.3904 12.5071 13.3344 12.5047C13.2717 12.4982 13.2083 12.5053 13.1486 12.5254C13.0888 12.5454 13.034 12.5781 12.9879 12.6211V12.6193C12.9834 12.6193 12.9219 12.6715 12.2592 13.4745C12.2211 13.5256 12.1687 13.5642 12.1087 13.5855C12.0486 13.6067 11.9836 13.6095 11.9219 13.5937C11.8621 13.5777 11.8036 13.5575 11.7468 13.5332C11.6331 13.4855 11.5937 13.4672 11.5158 13.4333L11.5112 13.4314C10.9868 13.2025 10.5012 12.8932 10.072 12.5148C9.95652 12.4139 9.84927 12.3039 9.73927 12.1976C9.37863 11.8522 9.06434 11.4615 8.80427 11.0353L8.75019 10.9482C8.71134 10.8897 8.67993 10.8265 8.65669 10.7603C8.62185 10.6255 8.7126 10.5173 8.7126 10.5173C8.7126 10.5173 8.93535 10.2735 9.03894 10.1415C9.12519 10.0318 9.20566 9.91767 9.28002 9.79959C9.38819 9.62542 9.4221 9.44667 9.36527 9.30825C9.1086 8.68125 8.84277 8.057 8.5696 7.43734C8.51552 7.3145 8.3551 7.2265 8.20935 7.20909C8.15985 7.20359 8.11035 7.19809 8.06085 7.19442C7.93775 7.1883 7.81439 7.18953 7.69144 7.19809V7.199Z"
+                    fill="#EED266"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_23176_1967">
+                    <rect
+                      width="22"
+                      height="22"
+                      fill="white"
+                      transform="translate(0 0.5)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="tg://resolve?domain=имя_пользователя">
+              <svg
+                width="22"
+                height="23"
+                viewBox="0 0 22 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.8274 4.72L17.8447 18.7867C17.6196 19.7795 17.0328 20.0265 16.1988 19.5589L11.6541 16.2098L9.46121 18.319C9.21861 18.5616 9.01558 18.7647 8.54787 18.7647L8.87434 14.136L17.2976 6.52464C17.6638 6.19816 17.2181 6.01722 16.7283 6.34374L6.31521 12.9005L1.83224 11.4974C0.857105 11.1929 0.839488 10.5222 2.03518 10.0546L19.5699 3.29924C20.3817 2.9948 21.0922 3.48009 20.8274 4.72Z"
+                  fill="#EED266"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <div class="header__tel-container">
+          <a class="tel" href="tel:+79509185894">+7(950) 918-58-94</a>
+          <a class="order-call-btn" data-fancybox href="#hidden"
+            >Заказать звонок</a
+          >
+          <div style="display: none; width: 500px" id="hidden">
+            <h2 class="modal-title">Заказать звонок</h2>
+            <form class="call-form">
+              <input
+                class="tel-input"
+                type="tel"
+                placeholder="Введите номер телефона"
+              />
+              <button class="btn-reset btn-submit" type="submit">
+                Заказать
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="section-container hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title">Ремонт квартир в&nbsp;Москве</h1>
+            <p class="hero__descr">
+              Ремонт квартир в Москве быстро и недорого с безупречным качеством
+              предлагает вам студия дизайна и ремонта квартир Оскар
+            </p>
+            <a href="#" class="hero__cost-link">
+              РАССЧИТАТЬ СТОИМОСТЬ ONLINE
+            </a>
+          </div>
+            <div class="hero__slider">
+    <div class="container">
+    <input type="radio" name="slider" id="item-1" checked>
+    <input type="radio" name="slider" id="item-2">
+    <input type="radio" name="slider" id="item-3">
+  <div class="cards carousel slide">
+    <label class="card" for="item-1" id="song-1">
+        <img
+        class="hero__img"
+        src="./img/hero-center.png"
+        aria-hidden="true"
+        />
+        <p class="hero__slider-descr">
+            Ремонт квартир <span class="slider-descr_color">под бюджет Заказчика:</span> от эконом до
+            премиум +
+        </p>
+    </label>
+    <label class="card" for="item-2" id="song-2">
+        <img
+          class="hero__img"
+          src="./img/hero-left.png"
+          aria-hidden="true"
+        />
+        <p class="hero__slider-descr prev">
+          <span class="slider-descr_color">Комфортное взаимодействие</span>
+          в режиме одного окна
+        </p>
+    </label>
+    <label class="card" for="item-3" id="song-3">
+        <img
+          class="hero__img"
+          src="./img/hero-left.png"
+          aria-hidden="true"
+        />
+        <p class="hero__slider-descr">
+          <span class="slider-descr_color">Комфортное взаимодействие</span>
+          в режиме одного окна
+        </p>
+    </label>
+   
+</div>
+</div>
+            </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="section-container services__container">
+          <small class="services__small">Какие услуги мы оказываем</small>
+          <h2 class="section-title">Современный и качественный ремонт</h2>
+          <p class="services__descr">
+            Компания Оскар предлагает вам полный спектр услуг, от разработки
+            дизайн-проекта интерьера до финальной уборки после ремонта квартир,
+            загородных домов, коттеджей, таунхаусов. Наши опытные специалисты
+            воплотят все ваши пожелания в жизнь.
+          </p>
+          <div class="filter-container">
+            <form class="form">
+                <div class="slider-metric-container">
+                    <label for="customRange3" class="form-label"><output id="output">24</output> <span class="square-m">м<sup>2</sup></span></label>
+      <input id="range" type="range" class="form-range" value="24" oninput="testFunction()"  min="0" max="999" id="customRange3">
+
+                </div>
+              <div class="checkbox-container">
+                <label class="form__checkbox-label">
+                  <input type="checkbox" class="checkbox" />
+                  Применить сертификат на&nbsp;<span class="label-bold">
+                    50000 рублей</span
+                  >
+                </label>
+                <label class="form__checkbox-label">
+                  <input type="checkbox" class="checkbox" />
+                  не могу определиться нужен дизайн проект
+                </label>
+              </div>
+            </form>
+            <div class="advantages">
+              <span class="advantages-title"
+                >С нами вы экономите деньги и время</span
+              >
+              Сделаем ремонт за 3 мес., даже если другие предложили сделать его
+              за 5 мес.
+            </div>
+            <button class="btn-reset order-btn">
+              Заказать дизайн&nbsp;проект
+            </button>
+          </div>
+    <div id="wrapper">
+      <div id="carousel">
+        <ul id="content">
+         <li class="item">
+      <h3 class="product__title">Эконом</h3>
+      <span class="sale"></span>
+      <span class="price-m2">12000 руб/кв.м</span>
+      <div class="product__img-container">
+        <picture>
+          <source srcset="./img/product-1.webp 1x" />
+          <img src="./img/product-1.webp" alt="Эконом" />
+        </picture>
+      </div>
+      <span class="final-price"
+        >итого
+        <span class="final-price_bold"> 900 000 </span> руб.</span
+      >
+      <div class="accordion accordion-flush scope-container" id="accordionFlushExample">
+<div class="accordion-item">
+<span class="accordion-header" id="flush-headingFive">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+        <span class="scope-title">Состав работ</span>
+Развернуть
+</button>
+   <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+   <div class="accordion-body"><ul>
+<li>Пункт состава работ</li>
+<li>Пункт состава работ</li>
+<li>Пункт состава работ</li>
+<li>Пункт состава работ</li>
+</ul></div>
+    </div>
+    </div>
+</div>
+      <div class="price-design">
+        <span class="price-design_title"
+          >Стоимость дизайн проектов</span
+        >
+        3900 руб/ м2
+      </div>
+      <button class="product__btn btn-reset">Заказать</button>
+    </li>
+
+    <li class="item">
+      <h3 class="product__title">Комфорт +</h3>
+      <span class="sale"></span>
+      <span class="price-m2">12000 руб/кв.м</span>
+      <div class="product__img-container">
+        <picture>
+          <source srcset="./img/product-2.webp 1x" />
+          <img src="./img/product-2.png" alt="Комфорт" />
+        </picture>
+      </div>
+      <span class="final-price"
+        >итого
+        <span class="final-price_bold"> 900 000 </span> руб.</span
+      >
+      <div class="accordion accordion-flush scope-container" id="accordionFlushExample">
+<div class="accordion-item">
+<span class="accordion-header" id="flush-headingFive">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+        <span class="scope-title">Состав работ</span>
+Развернуть
+</button>
+</h2>
+<div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+<div class="accordion-body"><ul>
+<li>Пункт состава работ</li>
+<li>Пункт состава работ</li>
+<li>Пункт состава работ</li>
+<li>Пункт состава работ</li>
+</ul></div>
+</div>
+</div>
+</div>
+      <div class="price-design">
+        <span class="price-design_title"
+          >Стоимость дизайн проектов</span
+        >
+        3900 руб/ м2
+      </div>
+      <button class="product__btn btn-reset">Заказать</button>
+    </li>
+
+    <li class="item">
+      <h3 class="product__title">Бизнес</h3>
+      <span class="sale">3 750 000руб&nbsp;</span>
+      <span class="price-m2">12000 руб/кв.м</span>
+      <div class="product__img-container">
+        <picture>
+          <source srcset="./img/product-3.webp 1x" />
+          <img src="./img/product-3.png" alt="Бизнес" />
+        </picture>
+      </div>
+      <span class="final-price"
+        >итого
+        <span class="final-price_bold"> 900 000 </span> руб.</span
+      >
+      <div class="accordion accordion-flush scope-container" id="accordionFlushExample">
+<div class="accordion-item">
+<span class="accordion-header" id="flush-headingFive">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+        <span class="scope-title">Состав работ</span>
+Развернуть
+</button>
+</h2>
+<div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+<div class="accordion-body"><ul>
+<li>Пункт состава работ</li>
+<li>Пункт состава работ</li>
+<li>Пункт состава работ</li>
+<li>Пункт состава работ</li>
+</ul></div>
+</div>
+</div>
+</div>
+      <div class="price-design">
+        <span class="price-design_title"
+          >Стоимость дизайн проектов</span
+        >
+        3900 руб/ м2
+      </div>
+      <button class="product__btn btn-reset">Заказать</button>
+    </li>
+
+    <li class="item">
+      <h3 class="product__title">Бизнес</h3>
+      <span class="sale"></span>
+      <span class="price-m2">12000 руб/кв.м</span>
+      <div class="product__img-container">
+        <picture>
+          <source srcset="./img/product-3.webp 1x" />
+          <img src="./img/product-3.png" alt="Бизнес" />
+        </picture>
+      </div>
+      <span class="final-price"
+        >итого
+        <span class="final-price_bold"> 900 000 </span> руб.</span
+      >
+      <div class="accordion accordion-flush scope-container" id="accordionFlushExample">
+<div class="accordion-item ">
+<span class="accordion-header" id="flush-headingFive">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+        <span class="scope-title">Состав работ</span>
+Развернуть
+</button>
+</span>
+<div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+<div class="accordion-body"><ul>
+<li>Пункт состава работ</li>
+<li>Пункт состава работ</li>
+<li>Пункт состава работ</li>
+<li>Пункт состава работ</li>
+</ul></div>
+</div>
+</div>
+</div>
+      <div class="price-design">
+        <span class="price-design_title"
+          >Стоимость дизайн проектов</span
+        >
+        3900 руб/ м2
+      </div>
+      <button class="product__btn btn-reset">Заказать</button>
+    </li>
+        </ul>
+      </div>
+      <button id="prev">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path fill="none" d="M0 0h24v24H0V0z" />
+          <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+        </svg>
+      </button>
+      <button id="next">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path fill="none" d="M0 0h24v24H0V0z" />
+          <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+        </svg>
+      </button>
+    </div>
+    
+        </div>
+      </section>
+    </main>
+    <script>function testFunction() {
+  const output = document.getElementById("output");
+  const range = document.getElementById("range");
+  output.value = range.value;
+}
+</script>
+  </body>
+</html>
