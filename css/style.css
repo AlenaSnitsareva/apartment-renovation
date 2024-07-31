@@ -81,7 +81,9 @@ input[type="search"]::-webkit-search-results-decoration {
 /* index */
 .section-container {
   margin: 0 auto;
-  max-width: 1520px;
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 1600px;
 }
 
 .btn-reset {
